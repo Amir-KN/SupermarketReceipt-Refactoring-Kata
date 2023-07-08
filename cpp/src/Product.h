@@ -14,6 +14,8 @@ public:
     std::string getName() const;
 
     ProductUnit getUnit() const;
+    
+    double getPrice() const;
 
     bool operator==(const Product& rhs) const;
 
@@ -30,6 +32,7 @@ public:
 private:
     std::string name;
     ProductUnit unit;
+    double price;
 
 };
 

@@ -10,6 +10,10 @@ ProductUnit Product::getUnit() const {
     return unit;
 }
 
+double Product::getPrice() const {
+    return price;
+}
+
 bool Product::operator==(const Product& rhs) const {
     return name == rhs.name &&
            unit == rhs.unit;
