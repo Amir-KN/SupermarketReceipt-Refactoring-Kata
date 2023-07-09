@@ -4,10 +4,10 @@
 
 #include "FakeCatalog.h"
 
-void FakeCatalog::addProduct(const Product& product) {
+void FakeCatalog::addProductPrice(const Product& product) {
     products[product.getName()] = product;
 }
 
-double FakeCatalog::getUnitPrice(const Product& product) {
+double FakeCatalog::getProductPrice(const Product& product) {
     return products[product.getName()].getPrice();
 }

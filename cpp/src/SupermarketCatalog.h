@@ -6,8 +6,8 @@
 
 class SupermarketCatalog {
 public:
-    virtual void addProduct(const Product& product) = 0;
-    virtual double getUnitPrice(const Product& product) = 0;
+    virtual void addProductPrice(const Product& product) = 0;
+    virtual double getProductPrice(const Product& product) = 0;
 };
 
 

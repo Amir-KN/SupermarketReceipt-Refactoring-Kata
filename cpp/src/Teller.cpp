@@ -12,7 +12,7 @@ Receipt Teller::checksOutArticlesFrom(ShoppingCart theCart) {
     for (const auto& pq: productQuantities) {
         Product p = pq.getProduct();
         double quantity = pq.getQuantity();
-        double unitPrice = catalog->getUnitPrice(p);
+        double unitPrice = catalog->getProductPrice(p);
         receipt.addProduct(p, quantity, unitPrice);
     }
     theCart.handleOffers(receipt, offers, catalog);

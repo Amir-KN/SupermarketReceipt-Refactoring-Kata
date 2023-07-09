@@ -29,7 +29,7 @@ void ShoppingCart::handleOffers(Receipt& receipt, std::map<Product, Offer> offer
         double quantity = productQuantity.second;
         if (offers.find(product) != offers.end()) {
             auto offer = offers[product];
-            double unitPrice = catalog->getUnitPrice(product);
+            double unitPrice = catalog->getProductPrice(product);
             int quantityAsInt = (int) quantity;
             Discount* discount = nullptr;
             int boughtProductsNum = 1;

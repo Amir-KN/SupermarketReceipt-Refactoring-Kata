@@ -11,9 +11,9 @@ TEST_CASE("TenPercentDiscount", "[Supermarket]")
     // ARRANGE
     SupermarketCatalog *catalog = new FakeCatalog();
     Product toothbrush("toothbrush", ProductUnit::Each);
-    catalog->addProduct(toothbrush, 0.99);
+    catalog->addProductPrice(toothbrush, 0.99);
     Product apples("apples", ProductUnit::Kilo);
-    catalog->addProduct(apples, 1.99);
+    catalog->addProductPrice(apples, 1.99);
     Teller teller(catalog);
     teller.addSpecialOffer(SpecialOfferType::TenPercentDiscount, toothbrush, 10.0);
 
